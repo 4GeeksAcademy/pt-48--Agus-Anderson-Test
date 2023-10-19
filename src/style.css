@@ -1,1 +1,15 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+#primerRec {
+  background-color: white;
+  border-radius: 36px 36px 36px 36px;
+  -webkit-border-radius: 36px 36px 36px 36px;
+  -moz-border-radius: 36px 36px 36px 36px;
+}
+
+#promedios {
+  background-color: aqua;
+  border-radius: 36px 36px 36px 36px;
+  -webkit-border-radius: 36px 36px 36px 36px;
+  -moz-border-radius: 36px 36px 36px 36px;
+}

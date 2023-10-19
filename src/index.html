@@ -1,28 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="“en”">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+    <meta charset=“UTF-8"> <meta name=“viewport” content=“width=device-width,
+    initial-scale=1.0">
+    <!-- displays site properly based on user’s device -->
+    <link rel=“icon” type=“image/png” sizes=“32x32”
+    href=“./assets/images/favicon-32x32.png”>
+    <title>Results summary component</title>
   </head>
-  <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+  <body class="bg-dark">
+    <div
+      class="container-fluid text-center d-flex justify-space-between"
+      id="contenedor"
+    >
+      <div class="row">
+        <div class="col-6" id="primerRec">
+          <p>
+            Your Result 76 of 100 Summary Reaction
+          </p>
+          <input
+            type="number"
+            placeholder="Input your test Result"
+            id="reaction"
+          />
+          <p>/ 100 Memory</p>
+          <input
+            type="number"
+            placeholder="Input your test Result"
+            id="memory"
+          />
+          <p>/ 100 Verbal</p>
+          <input
+            type="number"
+            placeholder="Input your test Result"
+            id="verbal"
+          />
+          <p>/ 100 Visual</p>
+          <input
+            type="number"
+            placeholder="Input your test Result"
+            id="visual"
+          />
+          <p>/ 100</p>
+          <button
+            type="button"
+            class="btn btn-danger"
+            onclick="obtenerPromedio()"
+          >
+            Continue
+          </button>
+          <div class="col-12" id="promedios">
+            <div>
+              <p>Promedio:</p>
+              <div id="promedio"></div>
+            </div>
+            <div id="mensaje"></div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
