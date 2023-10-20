@@ -19,9 +19,9 @@
         <div class="col pt-3" id="promedios">
           <div>
             <h3 style="color: lightgray;">Your Results:</h3>
-            <div class="rounded-circle" id="promedio"></div>
+            <div class="rounded-circle text-center" id="promedio"></div>
           </div>
-          <div id="mensaje"></div>
+          <div class="mt-4" id="mensaje"></div>
         </div>
         <div class="col pt-3" id="primerRec">
           <h3 class="text-start">Summary:</h3>
@@ -97,15 +97,25 @@
               </div>
             </div>
           </div>
-          <button
-            type="button"
-            class="btn d-grid gap-2 col-12 mx-auto mb-2 rounded-pill text-light"
-            onclick="obtenerPromedio()"
-          >
-            Continue
+          <button type="button" class="btn" onclick="obtenerPromedio()">
+            <svg
+              height="24"
+              width="24"
+              fill="#FFFFFF"
+              viewBox="0 0 24 24"
+              data-name="Layer 1"
+              id="Layer_1"
+              class="sparkle"
+            >
+              <path
+                d="M10,21.236,6.755,14.745.264,11.5,6.755,8.255,10,1.764l3.245,6.491L19.736,11.5l-6.491,3.245ZM18,21l1.5,3L21,21l3-1.5L21,18l-1.5-3L18,18l-3,1.5ZM19.333,4.667,20.5,7l1.167-2.333L24,3.5,21.667,2.333,20.5,0,19.333,2.333,17,3.5Z"
+              ></path>
+            </svg>
+            <span class="text">Continue</span>
           </button>
         </div>
       </div>
     </div>
   </body>
 </html>
+<!--class="btn d-grid gap-2 col-12 mx-auto mb-2 rounded-pill text-light"-->
