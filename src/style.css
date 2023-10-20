@@ -7,10 +7,29 @@
 }
 
 #promedios {
-  background-color: aqua;
+  background: rgb(119, 49, 208);
+  background: linear-gradient(
+    0deg,
+    rgba(119, 49, 208, 1) 0%,
+    rgba(153, 98, 222, 1) 50%,
+    rgba(119, 49, 208, 1) 100%
+  );
   border-radius: 36px 36px 36px 36px;
   -webkit-border-radius: 36px 36px 36px 36px;
   -moz-border-radius: 36px 36px 36px 36px;
+}
+
+#promedio {
+  width: 175px;
+  height: 175px;
+  margin-top: 75px;
+  margin-left: 135px;
+  background: rgb(111, 26, 219);
+  background: linear-gradient(
+    180deg,
+    rgba(111, 26, 219, 1) 0%,
+    rgba(152, 97, 221, 1) 75%
+  );
 }
 
 input {
