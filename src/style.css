@@ -1,10 +1,9 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
-#primerRec {
-  background-color: white;
-  border-radius: 36px 36px 36px 36px;
-  -webkit-border-radius: 36px 36px 36px 36px;
-  -moz-border-radius: 36px 36px 36px 36px;
+.row {
+  border-radius: 36px 36px 36px 36px !important;
+  -webkit-border-radius: 36px 36px 36px 36px !important;
+  -moz-border-radius: 36px 36px 36px 36px !important;
 }
 
 #promedios {
@@ -12,4 +11,17 @@
   border-radius: 36px 36px 36px 36px;
   -webkit-border-radius: 36px 36px 36px 36px;
   -moz-border-radius: 36px 36px 36px 36px;
+}
+
+input {
+  width: 70px !important;
+  height: 30px !important;
+}
+
+#prueba {
+  justify-content: space-between;
+}
+
+button {
+  background-color: blue !important;
 }

@@ -2,60 +2,108 @@
 <html lang="“en”">
   <head>
     <meta charset=“UTF-8"> <meta name=“viewport” content=“width=device-width,
-    initial-scale=1.0">
-    <!-- displays site properly based on user’s device -->
-    <link rel=“icon” type=“image/png” sizes=“32x32”
+    initial-scale=1.0"> <link rel=“icon” type=“image/png” sizes=“32x32”
     href=“./assets/images/favicon-32x32.png”>
-    <title>Results summary component</title>
+    <title>Results summary</title>
+    <script
+      src="https://kit.fontawesome.com/072e5df971.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body class="bg-dark">
     <div
-      class="container-fluid text-center d-flex justify-space-between"
+      class="container-fluid text-center d-flex justify-content-center position-absolute top-50 start-50 translate-middle"
       id="contenedor"
     >
-      <div class="row">
-        <div class="col-6" id="primerRec">
-          <p>
-            Your Result 76 of 100 Summary Reaction
-          </p>
-          <input
-            type="number"
-            placeholder="Input your test Result"
-            id="reaction"
-          />
-          <p>/ 100 Memory</p>
-          <input
-            type="number"
-            placeholder="Input your test Result"
-            id="memory"
-          />
-          <p>/ 100 Verbal</p>
-          <input
-            type="number"
-            placeholder="Input your test Result"
-            id="verbal"
-          />
-          <p>/ 100 Visual</p>
-          <input
-            type="number"
-            placeholder="Input your test Result"
-            id="visual"
-          />
-          <p>/ 100</p>
+      <div class="row w-50 bg-light rounded-3">
+        <div class="col pt-3" id="promedios">
+          <div>
+            <h3>Your Results:</h3>
+            <div id="promedio"></div>
+          </div>
+          <div id="mensaje"></div>
+        </div>
+        <div class="col pt-3" id="primerRec">
+          <h3 class="text-start">Summary:</h3>
+          <div
+            class="col d-flex alert alert-danger pb-0"
+            role="alert"
+            id="prueba"
+          >
+            <p class="pt-1">
+              <i class="fa-solid fa-bolt" style="color: #c60606;"></i>
+              Reaction
+            </p>
+            <div class="row">
+              <div class="col">
+                <input class="alert alert-danger" type="number" id="reaction" />
+              </div>
+              <div class="col pt-1">
+                <p>/ 100</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col d-flex alert alert-warning pb-0"
+            role="alert"
+            id="prueba"
+          >
+            <p class="pt-1">
+              <i class="fa-solid fa-brain" style="color: #b6cb15;"></i>
+              Memory
+            </p>
+            <div class="row">
+              <div class="col">
+                <input class="alert alert-warning" type="number" id="memory" />
+              </div>
+              <div class="col pt-1">
+                <p>/ 100</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col d-flex alert alert-success pb-0"
+            role="alert"
+            id="prueba"
+          >
+            <p class="pt-1">
+              <i class="fa-regular fa-comment" style="color: #11b01c;"></i>
+              Verbal
+            </p>
+            <div class="row">
+              <div class="col">
+                <input class="alert alert-success" type="number" id="verbal" />
+              </div>
+              <div class="col pt-1">
+                <p>/ 100</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col d-flex alert alert-primary pb-0"
+            role="alert"
+            id="prueba"
+          >
+            <p class="pt-1">
+              <i class="fa-regular fa-eye" style="color: #1753ba;"></i>
+              Visual
+            </p>
+            <div class="row">
+              <div class="col">
+                <input class="alert alert-primary" type="number" id="visual" />
+              </div>
+              <div class="col pt-1">
+                <p>/ 100</p>
+              </div>
+            </div>
+          </div>
           <button
             type="button"
-            class="btn btn-danger"
+            class="btn d-grid gap-2 col-12 mx-auto mb-2 rounded-pill text-light"
             onclick="obtenerPromedio()"
           >
             Continue
           </button>
-          <div class="col-12" id="promedios">
-            <div>
-              <p>Promedio:</p>
-              <div id="promedio"></div>
-            </div>
-            <div id="mensaje"></div>
-          </div>
         </div>
       </div>
     </div>
