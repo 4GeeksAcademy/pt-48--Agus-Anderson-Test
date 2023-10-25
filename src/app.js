@@ -22,7 +22,7 @@ function obtenerPromedio() {
     (accumulator, currentValue) => accumulator + currentValue
   );
 
-  let promedio = parseInt(sumTotal) / total.length;
+  let promedio = Math.floor(parseInt(sumTotal) / total.length);
 
   document.querySelector(
     "#promedio"
